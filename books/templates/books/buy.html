@@ -1,0 +1,10 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+
+{% block content %}
+	<h1>{{buy.author}}</h1>
+	<h6><i>on {{buy.date}}</i></h6>
+
+	<img src="{{buy.book_image.url}}" class="responsive-img" style='max-height:100px;' alt="my image">
+	<a href="{{buy.book_image.url}}">Click</a>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+
+<p>Here you can download the Mumbai University Question Papers for EXTC<p>
+	
+<h5><b>Semester-V</b></h5>
+<ul>
+	
+	{% for ques in object_list %}
+
+	<li><h5><b><a href="/qpapers/{{ques.id}}">{{ques.subject}}</a></b></h5></li>
+	{% endfor %}
+</ul>
+
+<p>(*note: use CTRL+F to search for yor subject)</p>
+{% endblock %}

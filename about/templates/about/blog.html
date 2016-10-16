@@ -1,0 +1,37 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="col-md-5">
+<h2>About us</h2><br>
+<p><h4>This website was developed by <b>Akhil Selvakumar</b> and <b>Shahid Akhtar Khan</b>.
+</h4><br>
+<p>Shahid and Akhil are Engineering students from Anjuman-I-Islam's Kalsekar Technical Campus (afiliated to Mumbai University).
+</p>
+</p>
+<br><br>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-7">
+<abbr title="Akhil 'n Shahid">
+<img class="img-rounded" align="left" src="/media/ak_n_sak.jpeg"" alt="Akhil and Shahid" style='max-width: 100%;height:auto;padding-bottom:5px'>
+</abbr>
+</abbr>
+</div>
+
+
+
+
+
+
+
+{% for about in object_list %}
+
+{% endfor %}
+{% endblock %}

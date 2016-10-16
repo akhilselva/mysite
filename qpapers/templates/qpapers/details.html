@@ -1,0 +1,24 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+<style>
+.hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 10px;
+}
+</style>	
+
+	<h3>{{ques.subject}}</h3>
+	<hr class="hr">
+	<h5>Semester-{{ques.semester}}</h5>
+	<h6><i><font size="5"><a href="{{ques.pdf_may_16.url}}">{{ques.may_16}}</a></font></i><h6>
+	<h6><i><font size="5"><a href="{{ques.pdf_dec_15.url}}">{{ques.dec_15}}</a></font></i><h6>
+	<h6><i><font size="5"><a href="{{ques.pdf_may_15.url}}">{{ques.may_15}}</a></font></i><h6>
+	<h6><i><font size="5"><a href="{{ques.pdf_dec_14.url}}">{{ques.dec_14}}</a></font></i><h6>
+{% endblock %}
